@@ -75,8 +75,8 @@ h1, h2, h3 {
 }
 
 .nav-logo {
-    width: 85px;
-    height: 60px;
+    width: 200px;
+    height: 80px;
     object-fit: contain;
 }
 
