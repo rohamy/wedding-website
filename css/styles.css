@@ -462,17 +462,3 @@ main.section h1 {
     box-shadow: none;
     margin-bottom:30px;
 }
-
-@media (max-width: 700px) {
-    main.section {
-        padding: 2rem 0;
-    }
-
-    main.section h1 {
-        margin-bottom: 1.5rem;
-    }
-
-    .homepage-image {
-        width: 100%;
-    }
-}
