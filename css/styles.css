@@ -1,3 +1,14 @@
+/* ========================================
+   COLOR PALETTE
+======================================== */
+
+:root {
+    --accent: #59413b;
+    --beige: #e4ddd3;
+    --background: #faf8f4;
+    --dark: #2d221f;
+}
+
 
 /* ========================================
    GENERAL
@@ -15,8 +26,8 @@ html {
 
 body {
     font-family: Georgia, serif;
-    color: #51483e;
-    background: #faf8f4;
+    color: var(--dark);
+    background: var(--background);
     line-height: 1.7;
 }
 
@@ -50,8 +61,8 @@ h1, h2, h3 {
 
     padding: 1.2rem 8%;
 
-    background: #faf8f4;
-    border-bottom: 1px solid #eae5dc;
+    background: var(--background);
+    border-bottom: 1px solid var(--beige);
 }
 
 .logo {
@@ -67,7 +78,7 @@ h1, h2, h3 {
 
 .nav-links a:hover,
 .nav-links a.active {
-    color: #a68b6d;
+    color: var(--accent);
 }
 
 
@@ -87,7 +98,7 @@ h1, h2, h3 {
     justify-content: center;
 
     overflow: hidden;
-    background: #e8e0d5;
+    background: var(--beige);
 }
 
 /* Image container */
@@ -115,7 +126,7 @@ h1, h2, h3 {
     justify-content: center;
 
     text-align: center;
-    color: white;
+    color: var(--background);
 
     padding: 2rem;
     text-shadow: 0 1px 8px rgba(0, 0, 0, 0.4);
@@ -127,7 +138,7 @@ h1, h2, h3 {
 }
 
 .hero-content p {
-    color: white;
+    color: var(--background);
     letter-spacing: 3px;
 }
 
@@ -184,13 +195,13 @@ h1, h2, h3 {
     margin-top: 2rem;
     padding: 0.8rem 2rem;
 
-    border: 1px solid #51483e;
+    border: 1px solid var(--dark);
     transition: 0.3s ease;
 }
 
 .button:hover {
-    background: #51483e;
-    color: white;
+    background: var(--dark);
+    color: var(--background);
 }
 
 
@@ -210,11 +221,11 @@ h1, h2, h3 {
     gap: 2rem;
 
     padding: 1.5rem 0;
-    border-bottom: 1px solid #e4ddd3;
+    border-bottom: 1px solid var(--beige);
 }
 
 .time {
-    color: #a68b6d;
+    color: var(--accent);
 }
 
 
@@ -230,7 +241,7 @@ h1, h2, h3 {
 
 details {
     padding: 1.3rem 0;
-    border-bottom: 1px solid #e4ddd3;
+    border-bottom: 1px solid var(--beige);
 }
 
 summary {
@@ -250,8 +261,8 @@ details p {
 footer {
     padding: 3rem;
     text-align: center;
-    background: #51483e;
-    color: white;
+    background: var(--dark);
+    color: var(--background);
 }
 
 
@@ -342,5 +353,69 @@ footer {
     /* Footer */
     footer {
         padding: 2.5rem 1rem;
+    }
+}
+
+
+/* ========================================
+   LINK BUTTON
+======================================== */
+
+.link-button {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+
+    background-color: var(--accent);
+    color: var(--background);
+}
+
+/* ========================================
+   HOMEPAGE
+======================================== */
+
+main.section {
+    min-height: auto;
+    padding: 3rem 5%;
+    background: var(--background);
+}
+
+main.section h1 {
+    margin-bottom: 2rem;
+}
+
+.homepage-image {
+    display: block;
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+.homepage-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: none;
+    background: transparent;
+    box-shadow: none;
+    margin-bottom:30px;
+}
+
+@media (max-width: 700px) {
+    main.section {
+        padding: 2rem 0;
+    }
+
+    main.section h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .homepage-image {
+        width: 100%;
     }
 }
